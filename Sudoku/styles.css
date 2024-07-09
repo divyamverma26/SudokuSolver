@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.top{
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 5rem;
+    line-height: 5rem;
+    color: #081b31;
+    background-color: rgb(255,255,255);
+    border-bottom: 5px double black;
+    font-family: "Baskervville SC", serif;
+    font-weight:normal;
+    font-style: normal;
+    text-decoration: underline;
+    z-index: 1;
+    /* background-image: url('bg3.jpg'); */
+}
+
+.mid{
+    position: relative;
+    top: 5.5rem;
+    height: 100%;
+    padding-top: 2rem;
+    text-align: center;
+    background-image: url('bg.jpg');
+    margin: 2rem;
+}
+.arena{ 
+    margin: auto;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    background-size: cover;
+    font-size: x-large;
+    height: 100%;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+.input{
+    margin: 1rem;
+    border: solid #081b31;
+    font-size: large;
+}
+.material-symbols-outlined{
+    background-color: green;
+}
+button{
+    font-size: large;
+    padding:0.3rem 1rem;
+    background-color: #081b31;
+    color: white;
+    border-radius: 20px;
+}
+button:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: green;
+    font-size: 20px;
+}
+.f1{
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.grid .question, .grid .answer {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-gap: 2px;
+    margin-bottom: 2rem;
+}
+
+.grid div div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #081b31;
+    font-size: 20px;
+}
